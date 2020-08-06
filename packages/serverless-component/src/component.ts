@@ -171,7 +171,8 @@ class NextjsComponent extends Component {
           cwd: buildConfig.cwd,
           env: buildConfig.env,
           args: buildConfig.args,
-          useServerlessTraceTarget: inputs.useServerlessTraceTarget || false
+          useServerlessTraceTarget: inputs.useServerlessTraceTarget || false,
+          defaultHandler: inputs.defaultHandler
         }
       );
 

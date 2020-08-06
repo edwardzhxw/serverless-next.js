@@ -25,6 +25,7 @@ type BuildOptions = {
   env?: NodeJS.ProcessEnv;
   cmd?: string;
   useServerlessTraceTarget?: boolean;
+  defaultHandler?: string;
 };
 
 const defaultBuildOptions = {
@@ -41,19 +42,16 @@ class Builder {
   serverlessDir: string;
   outputDir: string;
   buildOptions: BuildOptions = defaultBuildOptions;
-  defaultHandler?: string;
 
   constructor(
     nextConfigDir: string,
     outputDir: string,
-    buildOptions?: BuildOptions,
-    defaultHandler?: string
+    buildOptions?: BuildOptions
   ) {
     this.nextConfigDir = path.resolve(nextConfigDir);
     this.dotNextDir = path.join(this.nextConfigDir, ".next");
     this.serverlessDir = path.join(this.dotNextDir, "serverless");
     this.outputDir = outputDir;
-    this.defaultHandler = defaultHandler;
     if (buildOptions) {
       this.buildOptions = buildOptions;
     }
@@ -166,7 +164,7 @@ class Builder {
     return Promise.all([
       ...copyTraces,
       fse.copy(
-        this.defaultHandler ||
+        this.buildOptions.defaultHandler ||
           require.resolve("@sls-next/lambda-at-edge/dist/default-handler.js"),
         join(this.outputDir, DEFAULT_LAMBDA_CODE_DIR, "index.js")
       ),
