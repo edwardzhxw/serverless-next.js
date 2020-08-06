@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0-alpha.0](https://github.com/danielcondemarin/serverless-next.js/compare/@sls-next/lambda-at-edge@1.5.2-alpha.1...@sls-next/lambda-at-edge@1.6.0-alpha.0) (2020-08-06)
+
+### Features
+
+- change default region to us-west-2 ([a9cc80a](https://github.com/danielcondemarin/serverless-next.js/commit/a9cc80ade66fcdd16aa963f1af7919fae566eb41))
+
 ## [1.5.2-alpha.1](https://github.com/danielcondemarin/serverless-next.js/compare/@sls-next/lambda-at-edge@1.5.2-alpha.0...@sls-next/lambda-at-edge@1.5.2-alpha.1) (2020-07-30)
 
 **Note:** Version bump only for package @sls-next/lambda-at-edge
@@ -25,7 +31,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-- **lambda-at-edge:** use S3 regional endpoint when not in us-east-1 ([#474](https://github.com/danielcondemarin/serverless-next.js/issues/474)) ([5ecff1a](https://github.com/danielcondemarin/serverless-next.js/commit/5ecff1a50e26c22f7de9ec9da3cf2cba4390d77d))
+- **lambda-at-edge:** use S3 regional endpoint when not in us-west-2 ([#474](https://github.com/danielcondemarin/serverless-next.js/issues/474)) ([5ecff1a](https://github.com/danielcondemarin/serverless-next.js/commit/5ecff1a50e26c22f7de9ec9da3cf2cba4390d77d))
 
 ## [1.4.1-alpha.5](https://github.com/danielcondemarin/serverless-next.js/compare/@sls-next/lambda-at-edge@1.4.1-alpha.4...@sls-next/lambda-at-edge@1.4.1-alpha.5) (2020-06-30)
 

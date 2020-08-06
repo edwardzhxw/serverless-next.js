@@ -4,12 +4,16 @@
   "command": {
     "publish": {
       "ignoreChanges": ["*.md"],
+      "registry": "https://nexus.italki.com/repository/npm-releases",
       "message": "chore(release): publish"
     },
     "bootstrap": {
       "ignore": "component-*",
       "npmClientArgs": ["--no-package-lock"]
     }
+  },
+  "publish": {
+    "registry": "https://nexus.italki.com/repository/npm-releases"
   },
   "packages": ["packages/*"]
 }

@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.16.0-alpha.4](https://github.com/danielcondemarin/serverless-next.js/compare/@sls-next/serverless-component@1.16.0-alpha.1...@sls-next/serverless-component@1.16.0-alpha.4) (2020-08-06)
+
+### Features
+
+- change default region to us-west-2 ([a9cc80a](https://github.com/danielcondemarin/serverless-next.js/commit/a9cc80ade66fcdd16aa963f1af7919fae566eb41))
+
 # [1.16.0-alpha.1](https://github.com/danielcondemarin/serverless-next.js/compare/@sls-next/serverless-component@1.16.0-alpha.0...@sls-next/serverless-component@1.16.0-alpha.1) (2020-07-30)
 
 **Note:** Version bump only for package @sls-next/serverless-component
@@ -22,7 +28,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 ### Bug Fixes
 
 - **serverless-component:** fix "main" package.json property ([96d510d](https://github.com/danielcondemarin/serverless-next.js/commit/96d510d3e21f6fe84c02425f2c8c6f311b90665f))
-- **serverless-component:** fixes 307 errors when using bucket region outside us-east-1 ([#495](https://github.com/danielcondemarin/serverless-next.js/issues/495)) ([561e05f](https://github.com/danielcondemarin/serverless-next.js/commit/561e05f9ba9763fab4185b34adcde61dfcbb0a21))
+- **serverless-component:** fixes 307 errors when using bucket region outside us-west-2 ([#495](https://github.com/danielcondemarin/serverless-next.js/issues/495)) ([561e05f](https://github.com/danielcondemarin/serverless-next.js/commit/561e05f9ba9763fab4185b34adcde61dfcbb0a21))
 
 ## [1.15.1](https://github.com/danielcondemarin/serverless-next.js/compare/@sls-next/serverless-component@1.15.0...@sls-next/serverless-component@1.15.1) (2020-07-11)
 
