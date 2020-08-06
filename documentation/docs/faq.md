@@ -2,7 +2,8 @@
 id: faq
 title: Frequently Asked Questions
 sidebar_label: FAQs
----                                                                                                                                                                                                                   
+---
+
 ### My component doesn't deploy
 
 Make sure your `serverless.yml` uses the `serverless-components` format. [serverless components](https://serverless.com/blog/what-are-serverless-components-how-use/) differ from the original serverless framework, even though they are both accessible via the same CLI.
@@ -56,9 +57,9 @@ You need to commit your application state in source control. That is the files u
 
 The serverless team is currently working on remote state storage so this won't be necessary in the future.
 
-### My lambda is deployed to `us-east-1`. How can I deploy it to another region?
+### My lambda is deployed to `us-west-2`. How can I deploy it to another region?
 
-Serverless next.js is _regionless_. By design, `serverless-next.js` applications will be deployed across the globe to every CloudFront edge location. The lambda might look like is only deployed to `us-east-1` but behind the scenes, it is replicated to every other region.
+Serverless next.js is _regionless_. By design, `serverless-next.js` applications will be deployed across the globe to every CloudFront edge location. The lambda might look like is only deployed to `us-west-2` but behind the scenes, it is replicated to every other region.
 
 ### I require passing additional information into my build
 

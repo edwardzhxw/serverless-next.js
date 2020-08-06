@@ -38,7 +38,7 @@ describe("Input origin as a custom url", () => {
         ttl: 10,
         "lambda@edge": {
           "origin-request":
-            "arn:aws:lambda:us-east-1:123:function:originRequestFunction"
+            "arn:aws:lambda:us-west-2:123:function:originRequestFunction"
         }
       },
       origins: ["https://mycustomorigin.com"]
