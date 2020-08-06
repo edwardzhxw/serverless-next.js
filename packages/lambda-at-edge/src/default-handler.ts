@@ -25,7 +25,7 @@ const addS3HostHeader = (
 const isDataRequest = (uri: string): boolean => uri.startsWith("/_next/data");
 
 const normaliseS3OriginDomain = (s3Origin: CloudFrontS3Origin): string => {
-  if (s3Origin.region === "us-west-2") {
+  if (s3Origin.region === "us-east-1") {
     return s3Origin.domainName;
   }
 

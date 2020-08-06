@@ -332,7 +332,7 @@ Object {
 }
 `;
 
-exports[`S3 origins when origin is outside of us-west-2 should use the origin's host at the DomainName 1`] = `
+exports[`S3 origins when origin is outside of us-east-1 should use the origin's host at the DomainName 1`] = `
 Object {
   "DistributionConfig": Object {
     "Aliases": Object {
@@ -416,7 +416,7 @@ Object {
 }
 `;
 
-exports[`S3 origins when origin is outside of us-west-2 updates distribution 1`] = `
+exports[`S3 origins when origin is outside of us-east-1 updates distribution 1`] = `
 Object {
   "DistributionConfig": Object {
     "CacheBehaviors": Object {

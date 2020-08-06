@@ -33,11 +33,11 @@ describe("deploy tests", () => {
     });
     mockLambda.mockResolvedValueOnce({
       arn:
-        "arn:aws:lambda:us-west-2:123456789012:function:api-cachebehavior-func"
+        "arn:aws:lambda:us-east-1:123456789012:function:api-cachebehavior-func"
     });
     mockLambda.mockResolvedValueOnce({
       arn:
-        "arn:aws:lambda:us-west-2:123456789012:function:default-cachebehavior-func"
+        "arn:aws:lambda:us-east-1:123456789012:function:default-cachebehavior-func"
     });
     mockLambdaPublish.mockResolvedValue({
       version: "v1"
@@ -126,13 +126,13 @@ describe("deploy tests", () => {
           ttl: 0,
           "lambda@edge": {
             "origin-request":
-              "arn:aws:lambda:us-west-2:123456789012:function:default-cachebehavior-func:v1"
+              "arn:aws:lambda:us-east-1:123456789012:function:default-cachebehavior-func:v1"
           },
           compress: true
         },
         origins: [
           {
-            url: "http://bucket-xyz.s3.us-west-2.amazonaws.com",
+            url: "http://bucket-xyz.s3.us-east-1.amazonaws.com",
             private: true,
             pathPatterns: {
               "_next/static/*": {
@@ -148,7 +148,7 @@ describe("deploy tests", () => {
                 allowedHttpMethods: ["HEAD", "GET"],
                 "lambda@edge": {
                   "origin-request":
-                    "arn:aws:lambda:us-west-2:123456789012:function:default-cachebehavior-func:v1"
+                    "arn:aws:lambda:us-east-1:123456789012:function:default-cachebehavior-func:v1"
                 }
               },
               "static/*": {
@@ -163,7 +163,7 @@ describe("deploy tests", () => {
                 ttl: 0,
                 "lambda@edge": {
                   "origin-request":
-                    "arn:aws:lambda:us-west-2:123456789012:function:api-cachebehavior-func:v1"
+                    "arn:aws:lambda:us-east-1:123456789012:function:api-cachebehavior-func:v1"
                 },
                 allowedHttpMethods: expect.any(Array)
               }

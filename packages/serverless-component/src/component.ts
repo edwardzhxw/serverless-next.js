@@ -197,7 +197,7 @@ class NextjsComponent extends Component {
       ...cloudFrontOtherInputs
     } = inputs.cloudfront || {};
 
-    const bucketRegion = inputs.bucketRegion || "us-west-2";
+    const bucketRegion = inputs.bucketRegion || "us-east-1";
 
     const [defaultBuildManifest, apiBuildManifest] = await Promise.all([
       this.readDefaultBuildManifest(nextConfigPath),

@@ -3,7 +3,7 @@ var AWS = require("aws-sdk");
 require("dotenv").config();
 
 AWS.config.update({
-  region: "us-west-2",
+  region: "us-east-1",
   endpoint: process.env.LOCAL_DYNAMO_DB_ENDPOINT
 });
 
@@ -26,7 +26,7 @@ let params = {
 (async function () {
   await dynamodb.createTable(params).promise();
 
-  console.log("Created table in us-west-2");
+  console.log("Created table in us-east-1");
 
   if (!process.env.LOCAL_DYNAMO_DB_ENDPOINT) {
     // only replicate in production
@@ -44,7 +44,7 @@ let params = {
       GlobalTableName: "Todos",
       ReplicationGroup: [
         {
-          RegionName: "us-west-2"
+          RegionName: "us-east-1"
         },
         {
           RegionName: "eu-west-2"

@@ -41,16 +41,19 @@ class Builder {
   serverlessDir: string;
   outputDir: string;
   buildOptions: BuildOptions = defaultBuildOptions;
+  defaultHandler?: string;
 
   constructor(
     nextConfigDir: string,
     outputDir: string,
-    buildOptions?: BuildOptions
+    buildOptions?: BuildOptions,
+    defaultHandler?: string
   ) {
     this.nextConfigDir = path.resolve(nextConfigDir);
     this.dotNextDir = path.join(this.nextConfigDir, ".next");
     this.serverlessDir = path.join(this.dotNextDir, "serverless");
     this.outputDir = outputDir;
+    this.defaultHandler = defaultHandler;
     if (buildOptions) {
       this.buildOptions = buildOptions;
     }
@@ -163,7 +166,8 @@ class Builder {
     return Promise.all([
       ...copyTraces,
       fse.copy(
-        require.resolve("@sls-next/lambda-at-edge/dist/default-handler.js"),
+        this.defaultHandler ||
+          require.resolve("@sls-next/lambda-at-edge/dist/default-handler.js"),
         join(this.outputDir, DEFAULT_LAMBDA_CODE_DIR, "index.js")
       ),
       fse.writeJson(

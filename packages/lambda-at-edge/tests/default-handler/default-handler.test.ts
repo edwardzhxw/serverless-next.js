@@ -62,7 +62,7 @@ describe("Lambda@Edge", () => {
               authMethod: "origin-access-identity",
               domainName: "my-bucket.s3.amazonaws.com",
               path: "/static-pages",
-              region: "us-west-2"
+              region: "us-east-1"
             }
           });
           expect(request.uri).toEqual(expectedPage);
@@ -90,7 +90,7 @@ describe("Lambda@Edge", () => {
             authMethod: "origin-access-identity",
             domainName: "my-bucket.s3.amazonaws.com",
             path: "/public",
-            region: "us-west-2"
+            region: "us-east-1"
           }
         });
         expect(request.uri).toEqual("/manifest.json");
@@ -162,11 +162,11 @@ describe("Lambda@Edge", () => {
       });
     });
 
-    it("uses default s3 endpoint when bucket region is us-west-2", async () => {
+    it("uses default s3 endpoint when bucket region is us-east-1", async () => {
       const event = createCloudFrontEvent({
         uri: "/terms",
         host: "mydistribution.cloudfront.net",
-        s3Region: "us-west-2"
+        s3Region: "us-east-1"
       });
 
       const result = await handler(event);
@@ -185,7 +185,7 @@ describe("Lambda@Edge", () => {
       );
     });
 
-    it("uses regional endpoint for static page when bucket region is not us-west-2", async () => {
+    it("uses regional endpoint for static page when bucket region is not us-east-1", async () => {
       const event = createCloudFrontEvent({
         uri: "/terms",
         host: "mydistribution.cloudfront.net",
@@ -213,7 +213,7 @@ describe("Lambda@Edge", () => {
       );
     });
 
-    it("uses regional endpoint for public asset when bucket region is not us-west-2", async () => {
+    it("uses regional endpoint for public asset when bucket region is not us-east-1", async () => {
       const event = createCloudFrontEvent({
         uri: "/favicon.ico",
         host: "mydistribution.cloudfront.net",

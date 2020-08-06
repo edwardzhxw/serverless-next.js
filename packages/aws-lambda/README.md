@@ -63,7 +63,7 @@ myFunction:
     runtime: nodejs8.10
     env:
       TABLE_NAME: my-table
-    region: us-west-2
+    region: us-east-1
 
     # if you'd like to include any shims
     shims:

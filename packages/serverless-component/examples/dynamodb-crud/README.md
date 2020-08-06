@@ -1,6 +1,6 @@
 ## Description
 
-Example nextjs serverless app using a dynamodb database replicated across `eu-west-2` and `us-west-2`.
+Example nextjs serverless app using a dynamodb database replicated across `eu-west-2` and `us-east-1`.
 
 ## Getting started
 

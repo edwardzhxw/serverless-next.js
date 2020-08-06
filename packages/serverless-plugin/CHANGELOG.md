@@ -7,7 +7,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Features
 
-- change default region to us-west-2 ([e67762b](https://github.com/danielcondemarin/serverless-next.js/commit/e67762b1b177c37e975521dc976c0c5b8aff1bf9))
+- change default region to us-east-1 ([e67762b](https://github.com/danielcondemarin/serverless-next.js/commit/e67762b1b177c37e975521dc976c0c5b8aff1bf9))
 
 ## [2.6.2](https://github.com/danielcondemarin/serverless-next.js/compare/@sls-next/serverless-plugin@2.6.2-alpha.1...@sls-next/serverless-plugin@2.6.2) (2020-08-01)
 

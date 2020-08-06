@@ -28,7 +28,7 @@ const mockServerlessComponentDependencies = ({ expectedDomain }) => {
   });
 
   mockLambda.mockResolvedValue({
-    arn: "arn:aws:lambda:us-west-2:123456789012:function:my-func"
+    arn: "arn:aws:lambda:us-east-1:123456789012:function:my-func"
   });
 
   mockLambdaPublish.mockResolvedValue({
@@ -67,7 +67,7 @@ describe("Custom inputs", () => {
 
   describe.each`
     inputRegion    | expectedRegion
-    ${undefined}   | ${"us-west-2"}
+    ${undefined}   | ${"us-east-1"}
     ${"eu-west-2"} | ${"eu-west-2"}
   `(`When input region is $inputRegion`, ({ inputRegion, expectedRegion }) => {
     const fixturePath = path.join(__dirname, "./fixtures/generic-fixture");
@@ -562,9 +562,9 @@ describe("Custom inputs", () => {
       {
         origins: [
           "http://some-origin",
-          "http://bucket-xyz.s3.us-west-2.amazonaws.com/relative",
+          "http://bucket-xyz.s3.us-east-1.amazonaws.com/relative",
           { url: "http://diff-origin" },
-          { url: "http://bucket-xyz.s3.us-west-2.amazonaws.com/diff-relative" }
+          { url: "http://bucket-xyz.s3.us-east-1.amazonaws.com/diff-relative" }
         ]
       }
     ],
@@ -621,7 +621,7 @@ describe("Custom inputs", () => {
       ...defaults,
       "lambda@edge": {
         "origin-request":
-          "arn:aws:lambda:us-west-2:123456789012:function:my-func:v1",
+          "arn:aws:lambda:us-east-1:123456789012:function:my-func:v1",
         ...defaults["lambda@edge"]
       }
     };
@@ -641,7 +641,7 @@ describe("Custom inputs", () => {
         ...(expectedInConfig["api/*"] &&
           expectedInConfig["api/*"]["lambda@edge"]),
         "origin-request":
-          "arn:aws:lambda:us-west-2:123456789012:function:my-func:v1"
+          "arn:aws:lambda:us-east-1:123456789012:function:my-func:v1"
       }
     };
 
@@ -651,7 +651,7 @@ describe("Custom inputs", () => {
         ...cacheBehaviour,
         "lambda@edge": {
           "origin-request":
-            "arn:aws:lambda:us-west-2:123456789012:function:my-func:v1",
+            "arn:aws:lambda:us-east-1:123456789012:function:my-func:v1",
           ...(cacheBehaviour && cacheBehaviour["lambda@edge"])
         }
       };
@@ -686,7 +686,7 @@ describe("Custom inputs", () => {
               allowedHttpMethods: ["HEAD", "GET"],
               "lambda@edge": {
                 "origin-request":
-                  "arn:aws:lambda:us-west-2:123456789012:function:my-func:v1"
+                  "arn:aws:lambda:us-east-1:123456789012:function:my-func:v1"
               }
             },
             "api/*": {
@@ -704,7 +704,7 @@ describe("Custom inputs", () => {
             }
           },
           private: true,
-          url: "http://bucket-xyz.s3.us-west-2.amazonaws.com"
+          url: "http://bucket-xyz.s3.us-east-1.amazonaws.com"
         },
         ...origins
       ],

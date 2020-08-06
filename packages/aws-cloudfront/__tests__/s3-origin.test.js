@@ -186,7 +186,7 @@ describe("S3 origins", () => {
     });
   });
 
-  describe("when origin is outside of us-west-2", () => {
+  describe("when origin is outside of us-east-1", () => {
     it("should use the origin's host at the DomainName", async () => {
       await component.default({
         origins: ["https://mybucket.s3.eu-west-1.amazonaws.com"]

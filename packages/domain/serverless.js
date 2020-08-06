@@ -21,7 +21,7 @@ class Domain extends Component {
 
     this.context.debug(`Validating inputs.`);
 
-    inputs.region = inputs.region || "us-west-2";
+    inputs.region = inputs.region || "us-east-1";
     inputs.privateZone = inputs.privateZone || false;
     inputs.domainType = inputs.domainType || "both";
     inputs.defaultCloudfrontInputs = inputs.defaultCloudfrontInputs || {};

@@ -19,7 +19,7 @@ class CloudFront extends Component {
   async default(inputs = {}) {
     this.context.status("Deploying");
 
-    inputs.region = inputs.region || "us-west-2";
+    inputs.region = inputs.region || "us-east-1";
     inputs.enabled = inputs.enabled === false ? false : true;
     inputs.comment =
       inputs.comment === null || inputs.comment === undefined

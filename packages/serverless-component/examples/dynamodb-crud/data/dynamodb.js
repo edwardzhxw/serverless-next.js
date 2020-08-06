@@ -5,12 +5,12 @@ const getDynamoDBClient = () => {
   // this is to prevent the app from requiring the aws-sdk client side.
   const AWS = require("aws-sdk");
 
-  // dynamodb is replicated across us-west-2 and eu-west-2
-  // use us-west-2 for us regions or eu-west-2 for eu regions
+  // dynamodb is replicated across us-east-1 and eu-west-2
+  // use us-east-1 for us regions or eu-west-2 for eu regions
   // you can tweak this to suit your needs
-  const edgeRegion = process.env.AWS_REGION || "us-west-2";
+  const edgeRegion = process.env.AWS_REGION || "us-east-1";
   const dynamoDbRegion = edgeRegion.startsWith("us")
-    ? "us-west-2"
+    ? "us-east-1"
     : "eu-west-2";
 
   const options = {
