@@ -30,7 +30,7 @@ describe("publishVersion", () => {
       arn: "arn:aws:iam::123456789012:role/xyz"
     });
     mockCreateFunctionPromise.mockResolvedValueOnce({
-      FunctionArn: "arn:aws:lambda:us-east-1:123456789012:function:my-func",
+      FunctionArn: "arn:aws:lambda:us-west-2:123456789012:function:my-func",
       CodeSha256: "LQT0VA="
     });
 

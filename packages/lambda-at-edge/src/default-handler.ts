@@ -27,7 +27,7 @@ const isDataRequest = (uri: string): boolean => uri.startsWith("/_next/data");
 const normaliseUri = (uri: string): string => (uri === "/" ? "/index" : uri);
 
 const normaliseS3OriginDomain = (s3Origin: CloudFrontS3Origin): string => {
-  if (s3Origin.region === "us-east-1") {
+  if (s3Origin.region === "us-west-2") {
     return s3Origin.domainName;
   }
 
