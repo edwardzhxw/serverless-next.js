@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.8.0](https://github.com/danielcondemarin/serverless-next.js/compare/@sls-next/lambda-at-edge@1.7.0...@sls-next/lambda-at-edge@1.8.0) (2020-08-06)
+
+### Features
+
+- support custom default lambda handler ([0349b8b](https://github.com/danielcondemarin/serverless-next.js/commit/0349b8b3b99b67923da21beef79f06a34043f5d8))
+
 # [1.7.0](https://github.com/danielcondemarin/serverless-next.js/compare/@sls-next/lambda-at-edge@1.6.0...@sls-next/lambda-at-edge@1.7.0) (2020-08-06)
 
 ### Features

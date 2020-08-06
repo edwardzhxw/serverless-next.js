@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.19.0](https://github.com/danielcondemarin/serverless-next.js/compare/@sls-next/serverless-component@1.18.0...@sls-next/serverless-component@1.19.0) (2020-08-06)
+
+### Features
+
+- support custom default lambda handler ([0349b8b](https://github.com/danielcondemarin/serverless-next.js/commit/0349b8b3b99b67923da21beef79f06a34043f5d8))
+
 # [1.18.0](https://github.com/danielcondemarin/serverless-next.js/compare/@sls-next/serverless-component@1.17.0...@sls-next/serverless-component@1.18.0) (2020-08-06)
 
 ### Features
