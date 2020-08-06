@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.8.0](https://github.com/danielcondemarin/serverless-next.js/compare/@sls-next/serverless-plugin@2.7.0...@sls-next/serverless-plugin@2.8.0) (2020-08-06)
+
+### Features
+
+- support custom default handler ([4c322e8](https://github.com/danielcondemarin/serverless-next.js/commit/4c322e8645965cc1d82ee21f6f61a5aff93baa93))
+
 # [2.7.0](https://github.com/danielcondemarin/serverless-next.js/compare/@sls-next/serverless-plugin@2.6.2...@sls-next/serverless-plugin@2.7.0) (2020-08-06)
 
 ### Features

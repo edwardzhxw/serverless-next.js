@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/edwardzhxw/serverless-next.js/compare/@sls-next/domain@1.1.0...@sls-next/domain@1.2.0) (2020-08-06)
+
+### Features
+
+- support custom default handler ([4c322e8](https://github.com/edwardzhxw/serverless-next.js/commit/4c322e8645965cc1d82ee21f6f61a5aff93baa93))
+
 # [1.1.0](https://github.com/edwardzhxw/serverless-next.js/compare/@sls-next/domain@1.0.1...@sls-next/domain@1.1.0) (2020-08-06)
 
 ### Features
