@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0-alpha.3](https://github.com/edwardzhxw/serverless-next.js/compare/@sls-next/aws-cloudfront@1.1.0-alpha.1...@sls-next/aws-cloudfront@1.1.0-alpha.3) (2020-08-06)
+
+### Features
+
+- change default region to us-west-2 ([a9cc80a](https://github.com/edwardzhxw/serverless-next.js/commit/a9cc80ade66fcdd16aa963f1af7919fae566eb41))
+
 # [1.1.0-alpha.1](https://github.com/serverless-nextjs/serverless-next.js/compare/@sls-next/aws-cloudfront@1.1.0-alpha.0...@sls-next/aws-cloudfront@1.1.0-alpha.1) (2020-07-30)
 
 **Note:** Version bump only for package @sls-next/aws-cloudfront
