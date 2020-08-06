@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/danielcondemarin/serverless-next.js/compare/@sls-next/lambda-at-edge@1.5.2...@sls-next/lambda-at-edge@1.6.0) (2020-08-06)
+
+### Features
+
+- change default region to us-west-2 ([e67762b](https://github.com/danielcondemarin/serverless-next.js/commit/e67762b1b177c37e975521dc976c0c5b8aff1bf9))
+
 ## [1.5.2](https://github.com/danielcondemarin/serverless-next.js/compare/@sls-next/lambda-at-edge@1.5.2-alpha.1...@sls-next/lambda-at-edge@1.5.2) (2020-08-01)
 
 ### Bug Fixes
