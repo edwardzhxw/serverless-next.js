@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0-alpha.1](https://github.com/edwardzhxw/serverless-next.js/compare/@sls-next/domain@1.0.1-alpha.1...@sls-next/domain@1.1.0-alpha.1) (2020-08-06)
+
+### Features
+
+- change default region to us-west-2 ([1ca6e64](https://github.com/edwardzhxw/serverless-next.js/commit/1ca6e64184a3fc2250445e587146157abaf48d90))
+
 # [1.1.0-alpha.0](https://github.com/edwardzhxw/serverless-next.js/compare/@sls-next/domain@1.0.1-alpha.1...@sls-next/domain@1.1.0-alpha.0) (2020-08-06)
 
 ### Features
